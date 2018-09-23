@@ -53,3 +53,5 @@ OldGreyWoodIcons
 
 WoodIcons
 
+XmasIcons
+
