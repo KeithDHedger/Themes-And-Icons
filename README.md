@@ -35,5 +35,5 @@ HalloweenIcons
 
 nouveGnomeBrass
 
-nouveGnomeBrass
+nouveGnomeSteel
 

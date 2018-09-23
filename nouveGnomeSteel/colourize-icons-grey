@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#mkdir /tmp/owbicons
+#cd /tmp/owbicons
+#wget http://dl.dropbox.com/u/7793460/nouveGnomeGray-latest.tar.bz2
+#tar -xvf nouveGnomeGray-latest.tar.bz2
+#cd nouveGnomeGray
+#sed -i 's/nouveGnomeGray/nouveGnomeSteel/g' index.theme
+#echo -e "\n\nChange nouveGnomeGray to nouveGnomeSteel" >> README
+
+find -iname "*.png" | while read file
+	do
+
+	if [ ! -L "$file" ];then
+		echo Converting "$file" ...
+		convert "$file" -brightness-contrast -21x35 "$file"
+	fi
+done
+#
+#cd ..
+#mv nouveGnomeGray nouveGnomeSteel
+#cp -r nouveGnomeSteel ~/.icons
+#tar -czvf /tmp/nouveGnomeSteel.tar.gz nouveGnomeSteel
+#rm -r /tmp/owbicons
+
