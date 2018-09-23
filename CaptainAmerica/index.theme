@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Captain America
+Type=X-GNOME-Metatheme
+Comment=
+
+[X-GNOME-Metatheme]
+GtkTheme=CaptainAmerica
+CursorTheme=XSilver
+CursorSize=32
+
