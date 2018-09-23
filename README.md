@@ -1,5 +1,5 @@
 # Themes
-Themes for LFSDesktop and Xfce4
+Themes and Icon sets for LFSDesktop and Xfce4
 
 Theme List:
 
