@@ -51,3 +51,5 @@ OldBrownWoodIcons
 
 OldGreyWoodIcons
 
+WoodIcons
+
