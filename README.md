@@ -29,3 +29,5 @@ Icon sets for LFSDesktop and Xfce4
 
 FearAndMysteryIcons
 
+FearAndMysteryRageIcons
+
