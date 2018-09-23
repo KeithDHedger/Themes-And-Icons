@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Fear And Mystery
+Type=X-GNOME-Metatheme
+Comment=A port of the OSX theme Fear/Murder mystery, a big thanks to Joe Loy for the original theme and for giving me permission to release this port and also to Zachary Lutterman (wherever he is) for the Icons, joe950@me.com kdhedger@yahoo.co.uk
+
+[X-GNOME-Metatheme]
+GtkTheme=Fear And Mystery
+MetacityTheme=FearAndMystery
+IconTheme=FearAndMysteryIcons
+CursorTheme=XSilver
+

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+mv button0.png button-normal-ia.png
+mv button1.png button-normal.png
+mv button2.png button-pressed.png
+
+cp button-pressed.png button-normal-in-ia.png
+cp button-normal.png button-prelight.png
+cp button-pressed.png button-prelight-in.png
+
+mv MenuFill.png menufill.png
+
+mv pat.png pat2.png
+mv bc.png pat.png
+
