@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<metacity_theme>
+
+	<constant name="TitleHeight" value="24"/>
+	<constant name="TitleWidth" value="100"/>
+	<constant name="BottomHeight" value="11"/>
+	<constant name="BottomWidth" value="100"/>
+	<constant name="ButtonYOffset" value="2"/>
+
+	<info>
+		<name>ThemeName</name>
+		<author>K.D.Hedger</author>
+		<copyright> ©K.D.Hedger 2012 </copyright>
+		<date>2012</date>
+		<description> A Meta city Theme</description>
+	</info>
+
+	<frame_geometry name="normal" title_scale="medium" rounded_bottom_left="false" rounded_bottom_right="false" rounded_top_left="false" rounded_top_right="false">
+		<distance name="left_width" value="7"/>
+		<distance name="right_width" value="7"/>
+		<distance name="bottom_height" value="11"/>
+		<distance name="left_titlebar_edge" value="3"/>
+		<distance name="right_titlebar_edge" value="8"/>
+		<distance name="button_width" value="21"/>
+		<distance name="button_height" value="24"/>
+		<distance name="title_vertical_pad" value="0"/>
+		<border name="title_border" left="0" right="0" top="0" bottom="0"/>
+		<border name="button_border" left="0" right="0" top="0" bottom="0"/>
+	</frame_geometry>
+
+	<frame_geometry name="borderless" rounded_top_left="true" rounded_top_right="true" parent="normal">
+		<distance name="right_width" value="0"/>
+		<distance name="left_width" value="0"/>
+		<distance name="bottom_height" value="0"/>
+	</frame_geometry>
+
+<!--title active-->
+	<draw_ops name="title_tile_active">
+		<image filename="../images/title-active.png" alpha="1.0" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+
+	<draw_ops name="draw_titlebar">
+		<tile name="title_tile_active" tile_width="TitleWidth" tile_height="TitleHeight"/>
+		<image filename="../images/top-left-active.png" x="0" y="height-object_height" width="object_width" height="object_height"/>
+		<image filename="../images/top-right-active.png" x="width-object_width" y="height-object_height" width="object_width" height="object_height"/>
+	</draw_ops>
+
+	<draw_ops name="draw_title">
+		<title color="#ffffff" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
+	</draw_ops>
+
+<!--title inactive-->
+	<draw_ops name="title_tile_inactive">
+		<image filename="../images/title-inactive.png" alpha="1.0" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+
+	<draw_ops name="draw_titlebar_inactive">
+		<tile name="title_tile_inactive" tile_width="TitleWidth" tile_height="TitleHeight"/>
+		<image filename="../images/top-left-inactive.png" x="0" y="height-object_height" width="object_width" height="object_height"/>
+		<image filename="../images/top-right-inactive.png" x="width-object_width" y="height-object_height" width="object_width" height="object_height"/>
+	</draw_ops>
+
+	<draw_ops name="draw_title_inactive">
+		<title color="#505050" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
+	</draw_ops>
+
+<!--bottom active-->
+	<draw_ops name="bottom_tile_active">
+		<image filename="../images/bottom-active.png" alpha="1.0" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+
+	<draw_ops name="draw_bottom_edge">
+		<tile name="bottom_tile_active" tile_width="BottomWidth" tile_height="BottomHeight"/>
+		<image filename="../images/bottom-left-active.png" x="0" y="height - object_height" width="object_width" height="object_height"/>
+		<image filename="../images/bottom-right-active.png" x="width - object_width" y="height - object_height" width="object_width" height="object_height"/>
+	</draw_ops>
+
+<!--bottom inactive-->
+	<draw_ops name="bottom_tile_inactive">
+		<image filename="../images/bottom-inactive.png" alpha="1.0" x="0" y="0" width="object_width" height="object_height"/>
+	</draw_ops>
+
+	<draw_ops name="draw_bottom_edge_inactive">
+		<tile name="bottom_tile_inactive" tile_width="BottomWidth" tile_height="BottomHeight"/>
+		<image filename="../images/bottom-left-inactive.png" x="0" y="height - object_height" width="object_width" height="object_height"/>
+		<image filename="../images/bottom-right-inactive.png" x="width - object_width" y="height - object_height" width="object_width" height="object_height"/>
+	</draw_ops>
+
+
+<!--left edge active-->
+	<draw_ops name="draw_left_edge">
+			<image filename="../images/left-active.png" alpha="1.0" x="0" y="0" width="object_width" height="height"/> 
+	</draw_ops>
+
+<!--left edge inactive-->
+	<draw_ops name="draw_left_edge_inactive">
+			<image filename="../images/left-inactive.png" alpha="1.0" x="0" y="0" width="object_width" height="height"/> 
+	</draw_ops>
+
+<!--right edge active-->
+	<draw_ops name="draw_right_edge">
+			<image filename="../images/right-active.png" alpha="1.0" x="0" y="0" width="object_width" height="height"/> 
+	</draw_ops>
+
+<!--right edge inactive-->
+	<draw_ops name="draw_right_edge_inactive">
+			<image filename="../images/right-inactive.png" alpha="1.0" x="0" y="0" width="object_width" height="height"/> 
+	</draw_ops>
+
+<!-- Active (focused) style -->
+	<frame_style name="focused" geometry="normal">
+
+		<piece position="title">
+			<draw_ops>
+				<include name="draw_title"/>
+			</draw_ops>
+		</piece>
+
+		<piece position="titlebar">
+			<draw_ops>
+				<include name="draw_titlebar"/>
+			</draw_ops>
+		</piece>
+
+		<piece position="left_edge">
+			<draw_ops>
+				<include name="draw_left_edge"/>
+			</draw_ops>
+		</piece>
+
+		<piece position="right_edge">
+			<draw_ops>
+				<include name="draw_right_edge"/>
+			</draw_ops>
+		</piece>
+
+		<piece position="bottom_edge">
+			<draw_ops>
+				<include name="draw_bottom_edge"/>
+			</draw_ops>
+		</piece>
+
+		<button function="close" state="normal">
+			<draw_ops>
+				<image filename="../images/close-active.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="close" state="pressed">
+			<draw_ops>
+				<image filename="../images/close-pressed.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="close" state="prelight">
+			<draw_ops>
+				<image filename="../images/close-prelight.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="minimize" state="normal">
+			<draw_ops>
+				<image filename="../images/hide-active.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="minimize" state="pressed">
+			<draw_ops>
+				<image filename="../images/hide-pressed.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="minimize" state="prelight">
+			<draw_ops>
+				<image filename="../images/hide-prelight.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="maximize" state="normal">
+			<draw_ops>
+				<image filename="../images/maximize-active.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="maximize" state="pressed">
+			<draw_ops>
+				<image filename="../images/maximize-pressed.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="maximize" state="prelight">
+			<draw_ops>
+				<image filename="../images/maximize-prelight.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="menu" state="normal">
+			<draw_ops>
+				<image filename="../images/menu-active.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="menu" state="pressed">
+			<draw_ops>
+				<image filename="../images/menu-pressed.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="menu" state="prelight">
+			<draw_ops>
+				<image filename="../images/menu-prelight.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+	</frame_style>
+
+<!-- Inactive style -->
+	<frame_style name="normal" geometry="normal">
+
+		<piece position="title">
+			<draw_ops>
+				<include name="draw_title_inactive"/>
+			</draw_ops>
+		</piece>
+
+		<piece position="titlebar">
+			<draw_ops>
+				<include name="draw_titlebar_inactive"/>
+			</draw_ops>
+		</piece>
+
+		<piece position="left_edge">
+			<draw_ops>
+				<include name="draw_left_edge_inactive"/>
+			</draw_ops>
+		</piece>
+
+		<piece position="right_edge">
+			<draw_ops>
+				<include name="draw_right_edge_inactive"/>
+			</draw_ops>
+		</piece>
+
+		<piece position="bottom_edge">
+			<draw_ops>
+				<include name="draw_bottom_edge_inactive"/>
+			</draw_ops>
+		</piece>
+
+		<button function="close" state="normal">
+			<draw_ops>
+				<image filename="../images/close-inactive.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="close" state="pressed">
+			<draw_ops>
+				<image filename="../images/close-inactive.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="minimize" state="normal">
+			<draw_ops>
+				<image filename="../images/hide-inactive.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="minimize" state="pressed">
+			<draw_ops>
+				<image filename="../images/hide-inactive.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="maximize" state="normal">
+			<draw_ops>
+				<image filename="../images/maximize-inactive.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="maximize" state="pressed">
+			<draw_ops>
+				<image filename="../images/maximize-inactive.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="menu" state="normal">
+			<draw_ops>
+				<image filename="../images/menu-inactive.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+		<button function="menu" state="pressed">
+			<draw_ops>
+				<image filename="../images/menu-inactive.png" x="0" y="ButtonYOffset" width="object_width" height="object_height"/>
+			</draw_ops>
+		</button>
+
+	</frame_style>
+
+<!-- Active (focused) shaded style -->
+	<frame_style name="normal_shaded" geometry="normal" parent="normal">
+	</frame_style>
+<!-- Active (focused) shaded style -->
+	<frame_style name="focused_shaded" geometry="normal" parent="focused">
+	</frame_style>
+
+	<frame_style_set name="normal">
+		<frame focus="yes" state="shaded" style="focused_shaded"/>
+		<frame focus="yes" state="normal" resize="both" style="focused"/>
+		<frame focus="yes" state="maximized" style="focused"/>
+		<frame focus="yes" state="maximized_and_shaded" style="focused_shaded"/>
+		<frame focus="no" state="normal" resize="both" style="normal"/>
+		<frame focus="no" state="shaded" style="normal_shaded"/>
+		<frame focus="no" state="maximized" style="normal"/>
+		<frame focus="no" state="maximized_and_shaded" style="normal_shaded"/>
+	</frame_style_set>
+
+	<window type="normal" style_set="normal"/>
+	<window type="dialog" style_set="normal"/>
+	<window type="modal_dialog" style_set="normal"/>
+	<window type="menu" style_set="normal"/>
+	<window type="utility" style_set="normal"/>
+	<window type="border" style_set="normal"/>
+
+</metacity_theme>

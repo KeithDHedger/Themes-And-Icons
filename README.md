@@ -21,3 +21,5 @@ OldyXmasTheme
 
 WoodThemeRustic
 
+WoodThemeSmooth
+

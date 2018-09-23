@@ -1,0 +1,126 @@
+style	"checkbox"
+{
+	fg[NORMAL]="#000000"
+	fg[PRELIGHT]="#f0f0f0"
+	fg[ACTIVE]="#000000"
+
+	engine	"pixmap"
+		{
+
+#blank
+			image
+				{
+					function=CHECK
+					shadow=OUT
+					state=	NORMAL
+					overlay_file="check-norm.png"
+					overlay_stretch=FALSE
+				}
+#blank inactive
+			image
+				{
+					function=CHECK
+					shadow=OUT
+					state=	INSENSITIVE
+					overlay_file="check-norm-ia.png"
+					overlay_stretch=FALSE
+				}
+
+#rollover
+			image
+				{
+					function=CHECK
+					shadow=OUT
+					state=PRELIGHT
+					overlay_file="check-norm-prelight.png"
+					overlay_stretch=FALSE
+				}
+#push	
+			image
+				{
+					function=CHECK
+					shadow=OUT
+					state=ACTIVE
+					overlay_file="check-selected-pressed.png"
+					overlay_stretch=FALSE
+				}
+#checked	
+			image
+				{
+					function=CHECK
+					shadow=IN
+					state=NORMAL
+					overlay_file="check-selected.png"
+					overlay_stretch=FALSE
+				}
+#checked inactive 	
+			image
+				{
+					function=CHECK
+					shadow=IN
+					state=INSENSITIVE
+					overlay_file="check-selected-ia.png"
+					overlay_stretch=FALSE
+				}
+#rollover checked
+			image
+				{
+					function=CHECK
+					shadow=IN
+					state=PRELIGHT
+					overlay_file="check-selected-prelight.png"
+					overlay_stretch=FALSE
+				}
+#rollover pressed
+			image
+				{
+					function=CHECK
+					shadow=IN
+					state=ACTIVE
+					overlay_file="check-selected-pressed.png"
+					overlay_stretch=FALSE
+				}
+#indeterminate
+			image
+				{
+					function=CHECK
+					shadow=ETCHED_IN
+					state=NORMAL
+					overlay_file="check-ind.png"
+					overlay_stretch=FALSE
+				}
+#indeterminate inactive
+			image
+				{
+					function=CHECK
+					shadow=ETCHED_IN
+					state=INSENSITIVE
+					overlay_file="check-ind-ia.png"
+					overlay_stretch=FALSE
+				}
+#indeterminate rollover
+			image
+				{
+					function=CHECK
+					shadow=ETCHED_IN
+					state=PRELIGHT
+					overlay_file="check-ind-prelight.png"
+					overlay_stretch=FALSE
+				}
+#indeterminate pressed
+			image
+				{
+					function=CHECK
+					shadow=ETCHED_IN
+					state=ACTIVE
+					overlay_file="check-ind-pressed.png"
+					overlay_stretch=FALSE
+				}
+#boundingbox
+			image
+				{
+					function=FLAT_BOX
+				}
+		}
+}
+
