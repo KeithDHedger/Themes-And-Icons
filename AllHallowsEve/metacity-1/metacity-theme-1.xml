@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<metacity_theme>
+<info>
+  <name>All Hallows Eve</name>
+  <author>K.D.Hedger</author>
+  <copyright> - </copyright>
+  <date>2008</date>
+  <description>A Port of a Mac OS X theme originally made by Joe Loy at www.fearutopia.com</description>
+</info>
+
+<frame_geometry name="normal" title_scale="medium" rounded_bottom_left="true" rounded_bottom_right="true" rounded_top_left="true" rounded_top_right="true">
+  <distance name="left_width" value="6"/>
+  <distance name="right_width" value="6"/>
+  <distance name="bottom_height" value="6"/>
+  <distance name="left_titlebar_edge" value="3"/>
+  <distance name="right_titlebar_edge" value="3"/>
+  <distance name="button_width" value="32"/>
+  <distance name="button_height" value="42"/>
+  <distance name="title_vertical_pad" value="0"/>
+  <border name="title_border" left="0" right="0" top="0" bottom="0"/>
+  <border name="button_border" left="0" right="0" top="0" bottom="0"/>
+</frame_geometry>
+
+<frame_geometry name="borderless" rounded_top_left="true" rounded_top_right="true" parent="normal">
+  <distance name="right_width" value="0"/>
+  <distance name="left_width" value="0"/>
+  <distance name="bottom_height" value="0"/>
+</frame_geometry>
+
+
+
+<!-- Border and Titlebar -->
+<draw_ops name="bctile">
+<image filename="bc.png" alpha="1.0" x="0" y="0" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="borders">
+<tile name="bctile" tile_width="192" tile_height="192"/> 
+
+<line color="#404040" x1="0" y1="height-1" x2="width" y2="height-1" width="1"/>
+
+<line color="#909090" x1="0" y1="0" x2="0" y2="height-1" width="1"/>
+<line color="#404040" x1="width-1" y1="0" x2="width-1" y2="height-1" width="1"/>
+
+<image filename="bottom_left.png" x="0" y="height - object_height" width="object_width" height="object_height"/>
+<image filename="bottom_right.png" x="width - object_width" y="height - object_height" width="object_width" height="object_height"/>
+
+</draw_ops>
+
+
+<draw_ops name="title_tile">
+<line color="#FFFFFF" x1="0" y1="1" x2="width" y2="1" width="1"/> 
+
+ <image filename="top_left.png" x="0" y="0" width="object_width" height="object_height"/>
+ <image filename="top_right.png" x="width - object_width" y="0" width="object_width" height="object_height"/>
+
+</draw_ops>
+
+<!-- Inactive style -->
+<frame_style name="normal" geometry="normal">
+  <piece position="entire_background">
+
+  <draw_ops>
+  <include name="borders"/>
+
+   </draw_ops>
+  </piece>
+
+  <piece position="title">
+    <draw_ops>
+      <title color="#808080" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
+    </draw_ops>
+  </piece>
+
+  <piece position="titlebar">
+    <draw_ops>
+     <include name="title_tile"/>
+    </draw_ops>
+  </piece>
+
+  <button function="close" state="normal">
+    <draw_ops>
+      <image filename="windowdotia.png" x="0" y="4" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+  <button function="close" state="pressed">
+    <draw_ops>
+      <image filename="windowdotia.png" x="0" y="4" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+
+
+  <button function="minimize" state="normal">
+    <draw_ops>
+      <image filename="windowdotia.png" x="0" y="4" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+  <button function="minimize" state="pressed">
+    <draw_ops>
+       <image filename="windowdotia.png" x="0" y="4" width="object_width" height="object_height"/>
+   </draw_ops>
+  </button>
+
+
+
+  <button function="maximize" state="normal">
+    <draw_ops>
+      <image filename="windowdotia.png" x="0" y="4" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+  <button function="maximize" state="pressed">
+    <draw_ops>
+      <image filename="windowdotia.png" x="0" y="4" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+  <button function="menu" state="normal">
+    <draw_ops>
+      <image filename="windowtoolZ.png" x="0" y="6" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+  <button function="menu" state="pressed">
+    <draw_ops>
+      <image filename="windowtoolZ.png" x="0" y="6" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+
+</frame_style>
+
+
+<!-- Active (focused) shaded style -->
+<frame_style name="normal_shaded" geometry="normal" parent="normal">
+
+</frame_style>
+
+<!-- Active (focused) style -->
+<frame_style name="focused" geometry="normal">
+  <piece position="entire_background">
+    <draw_ops>
+      <include name="borders"/>
+   </draw_ops>
+  </piece>
+
+  <piece position="title">
+    <draw_ops>
+      <title color="#ffffff" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
+    </draw_ops>
+  </piece>
+
+  <piece position="titlebar">
+    <draw_ops>
+      <include name="title_tile"/>
+    </draw_ops>
+  </piece>
+
+  <button function="close" state="normal">
+    <draw_ops>
+      <image filename="windowdot.png" x="0" y="4" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+  <button function="close" state="pressed">
+    <draw_ops>
+      <image filename="windowclose2.png" x="0" y="8" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+  <button function="close" state="prelight">
+    <draw_ops>
+      <image filename="windowclose1.png" x="0" y="4" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+  <button function="minimize" state="normal">
+    <draw_ops>
+      <image filename="windowdot.png" x="0" y="4" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+  <button function="minimize" state="pressed">
+    <draw_ops>
+      <image filename="windowmin2.png" x="0" y="8" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+<button function="minimize" state="prelight">
+    <draw_ops>
+      <image filename="windowmin1.png" x="0" y="4" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+  <button function="maximize" state="normal">
+    <draw_ops>
+      <image filename="windowdot.png" x="0" y="4" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+  <button function="maximize" state="pressed">
+    <draw_ops>
+      <image filename="windowmax2.png" x="0" y="8" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+<button function="maximize" state="prelight">
+    <draw_ops>
+      <image filename="windowmax1.png" x="0" y="4" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+  <button function="menu" state="normal">
+    <draw_ops>
+      <image filename="windowtool.png" x="0" y="6" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+  <button function="menu" state="pressed">
+    <draw_ops>
+      <image filename="windowtool2.png" x="0" y="6" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+<button function="menu" state="prelight">
+    <draw_ops>
+      <image filename="windowtool1.png" x="0" y="6" width="object_width" height="object_height"/>
+    </draw_ops>
+  </button>
+
+
+
+
+</frame_style>
+
+<!-- Active (focused) shaded style -->
+<frame_style name="focused_shaded" geometry="normal" parent="focused">
+
+</frame_style>
+
+<frame_style_set name="normal">
+<frame focus="yes" state="shaded" style="focused_shaded"/>
+<frame focus="yes" state="normal" resize="both" style="focused"/>
+<frame focus="yes" state="maximized" style="focused"/>
+<frame focus="yes" state="maximized_and_shaded" style="focused_shaded"/>
+<frame focus="no" state="normal" resize="both" style="normal"/>
+<frame focus="no" state="shaded" style="normal_shaded"/>
+<frame focus="no" state="maximized" style="normal"/>
+<frame focus="no" state="maximized_and_shaded" style="normal_shaded"/>
+</frame_style_set>
+
+<window type="normal" style_set="normal"/>
+<window type="dialog" style_set="normal"/>
+<window type="modal_dialog" style_set="normal"/>
+<window type="menu" style_set="normal"/>
+<window type="utility" style_set="normal"/>
+<window type="border" style_set="normal"/>
+
+<menu_icon function="maximize" state="normal">
+  <draw_ops>
+    <image filename="windowdot.png" 
+           x="(width - object_width) / 2"
+           y="(height - object_height) / 2"
+           width="object_width" height="object_height"/>
+  </draw_ops>
+</menu_icon>
+
+
+<menu_icon function="close" state="normal">
+  <draw_ops>
+    <image filename="windowdot.png" 
+           x="(width - object_width) / 2"
+           y="(height - object_height) / 2"
+           width="object_width" height="object_height"/>
+  </draw_ops>
+</menu_icon>
+
+<menu_icon function="minimize" state="normal">
+  <draw_ops>
+    <image filename="windowdot.png" 
+           x="(width - object_width) / 2"
+           y="(height - object_height) / 2"
+           width="object_width" height="object_height"/>
+  </draw_ops>
+</menu_icon>
+
+<menu_icon function="unmaximize" state="normal">
+  <draw_ops>
+  </draw_ops>
+</menu_icon>
+
+</metacity_theme>

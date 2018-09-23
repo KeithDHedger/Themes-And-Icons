@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=All Hallows Eve
+Type=X-GNOME-Metatheme
+Comment=
+
+[X-GNOME-Metatheme]
+GtkTheme=AllHallowsEve
+MetacityTheme=AllHallowsEve
+IconTheme=HalloweenIcons
+CursorTheme=XSilver
+CursorSize=32
+
