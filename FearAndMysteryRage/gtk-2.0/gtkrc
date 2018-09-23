@@ -1,0 +1,469 @@
+include	"scrollbar-styles"
+include	"global-styles"
+include "icons/iconrc"
+include "button.rc"
+
+style "theme-tooltips"
+{
+	fg[NORMAL]="#ffffff"
+	bg_pixmap[NORMAL]="pat.png"
+}
+
+style "range"
+{
+	engine "pixmap"
+		{
+
+			image
+				{
+					function=BOX
+					file="range/trough-horiz.png"
+					stretch=TRUE
+				orientation=HORIZONTAL
+				}
+
+			image
+				{
+					function=BOX
+					file="range/trough-vert.png"
+					stretch=TRUE
+					orientation=VERTICAL
+				}
+			image
+				{
+					function=SLIDER
+					state=NORMAL
+					file="range/null.png"
+					stretch=TRUE
+					overlay_file="range/slider-horiz.png"
+					overlay_stretch=FALSE
+					orientation=HORIZONTAL
+				}
+			image
+				{
+					function=SLIDER
+					state=PRELIGHT
+					file="range/null.png"
+					stretch=TRUE
+					overlay_file="range/slider-horiz-pre.png"
+					overlay_stretch=FALSE
+					orientation=HORIZONTAL
+				}
+			image
+				{
+					function=SLIDER
+					state=INSENSITIVE
+					file="range/null.png"
+					stretch=TRUE
+					overlay_file="range/slider-horiz.png"
+					overlay_stretch=FALSE
+					orientation=HORIZONTAL
+				}
+			image
+				{
+					function=SLIDER
+					state=NORMAL
+					file="range/null.png"
+					stretch=TRUE
+					overlay_file="range/slider-vert.png"
+					overlay_stretch=FALSE
+					orientation=VERTICAL
+				}
+			image
+				{
+					function=SLIDER
+					state=PRELIGHT
+					file="range/null.png"
+					stretch=TRUE
+					overlay_file="range/slider-vert-pre.png"
+					overlay_stretch=FALSE
+					orientation=VERTICAL
+				}
+			image
+				{
+					function=SLIDER
+					state=INSENSITIVE
+					file="range/null.png"
+					stretch=TRUE
+					overlay_file="range/slider-vert.png"
+					overlay_stretch=FALSE
+					orientation=VERTICAL
+				}
+		}
+}
+
+style "progressbar"="default"
+{
+	xthickness=2
+	ythickness=2
+
+	bg[PRELIGHT]="#FFFFFF"
+	fg[PRELIGHT]="#FFFFFF"
+
+	engine "pixmap"
+		{
+			image
+				{
+					function=BOX
+					detail="trough"
+					file="progressbar/trough-progressbar-horiz.png"
+					stretch=FALSE
+					orientation=HORIZONTAL
+				}
+			image
+				{
+					function=BOX
+					detail="trough"
+					file="progressbar/trough-progressbar-vert.png"
+					stretch=TRUE
+					orientation=VERTICAL
+				}
+			image
+				{
+					function=BOX
+					detail="bar"
+					file="progressbar/progressbar-horiz.png"
+					stretch=FALSE
+					orientation=HORIZONTAL
+				}
+			image
+				{
+					function=BOX
+					detail="bar"
+					file="progressbar/progressbar-vert.png"
+					stretch=FALSE
+					orientation=VERTICAL
+				}
+		}
+}
+
+style "menusep"
+{
+	GtkWidget::wide-separators=1
+	GtkWidget::separator-height=6
+
+	engine	"pixmap"
+		{
+			image
+				{
+					function=BOX
+					file="menusep.png"
+					stretch=TRUE
+					border={ 0, 0, 0, 0 }
+				}
+		}
+}
+
+style "menuitem"
+{
+	fg[NORMAL]="#ffffff"
+	fg[ACTIVE]="#ffffff"
+	fg[PRELIGHT]="#ffffff"
+
+	engine	"pixmap"
+		{
+			image
+				{
+					function=BOX
+					file="menuitem.png"
+					stretch=TRUE
+				}
+		}
+}
+
+style "menubar"
+{
+	xthickness=2
+	ythickness=2
+
+	fg[NORMAL]="#ffffff"
+	fg[ACTIVE]="#ffffff"
+	fg[PRELIGHT]="#ffffff"
+
+	engine	"pixmap"
+		{
+			image
+				{
+					function=BOX
+					file="menubar.png"
+					border={0,0,0,0}
+					stretch=FALSE
+				}
+		}
+}
+
+style "menu"
+{
+	fg[NORMAL]="#ffffff"
+	fg[PRELIGHT]="#ffffff"
+	bg_pixmap[NORMAL]="menufill.png"
+}
+
+style "combo"
+{
+	fg[NORMAL]="#808080"
+	fg[PRELIGHT]="#000000"
+}
+
+style "checkbox"
+{
+	fg[NORMAL]="#000000"
+	fg[PRELIGHT]="#ffffff"
+	fg[ACTIVE]="#000000"
+	fg[SELECTED]="#000000"
+
+	engine	"pixmap"
+		{
+			image
+				{
+					function=CHECK
+					shadow=OUT
+					state=NORMAL
+					overlay_file="Checkbox0.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=CHECK
+					shadow=OUT
+					state=PRELIGHT
+					overlay_file="Checkbox0.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=CHECK
+					shadow=OUT
+					state=ACTIVE
+					overlay_file="Checkbox1.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=CHECK
+					shadow=OUT
+					state=INSENSITIVE
+					overlay_file="Checkbox3.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=CHECK
+					shadow=IN
+					state=NORMAL
+					overlay_file="Checkbox1.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=CHECK
+					shadow=IN
+					state=PRELIGHT
+					overlay_file="Checkbox1.png"
+					overlay_stretch=FALSE
+				}
+
+			image
+				{
+					function=CHECK
+					shadow=IN
+					state=ACTIVE
+					overlay_file="Checkbox1.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=CHECK
+					shadow=IN
+					state=INSENSITIVE
+					overlay_file="Checkbox2.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=FLAT_BOX
+				}
+		}
+}
+
+style "radiobox"
+{
+	fg[NORMAL]="#000000"
+	fg[PRELIGHT]="#404040"
+	fg[ACTIVE]="#000000"
+
+	engine	"pixmap"
+		{
+			image
+				{
+					function=OPTION
+					shadow=OUT
+					state=NORMAL
+					overlay_file="RadioButton0.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=OPTION
+					shadow=OUT
+					state=PRELIGHT
+					overlay_file="RadioButton0.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=OPTION
+					shadow=OUT
+					state=ACTIVE
+					overlay_file="RadioButton1.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=OPTION
+					shadow=IN
+					state=ACTIVE
+					overlay_file="RadioButton1.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=OPTION
+					shadow=OUT
+					state=INSENSITIVE
+					overlay_file="RadioButton3.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=OPTION
+					shadow=IN
+					state=NORMAL
+					overlay_file="RadioButton1.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=OPTION
+					shadow=IN
+					state=PRELIGHT
+					overlay_file="RadioButton1.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=OPTION
+					shadow=IN
+					state=INSENSITIVE
+					overlay_file="RadioButton2.png"
+					overlay_stretch=FALSE
+				}
+			image
+				{
+					function=FLAT_BOX
+				}
+
+		}
+}
+
+style "toolbar"
+{
+	xthickness=0
+	ythickness=0
+
+	fg [NORMAL]="#ffffff"
+	fg [PRELIGHT]="#000000"
+	fg [ACTIVE]="#000000"
+}
+
+style "treeview"
+{
+  	fg[NORMAL]="#000000"
+	fg[ACTIVE]="#000000"
+	fg[PRELIGHT]="#000000"
+	fg[SELECTED]="#000000"
+}
+
+style "panel"
+{
+	bg_pixmap[NORMAL]="pat2.png"
+	fg[NORMAL]="#ffffff"
+}
+
+style "notebook"
+{
+  	fg[NORMAL]="#ffffff"
+	fg[ACTIVE]="#ff4040"
+	fg[PRELIGHT]="#000000"
+	fg[SELECTED]="#ffffff"
+	fg[INSENSITIVE]="#ffffff"
+}
+
+style "toolbarlabel"
+{
+  	fg[NORMAL]="#ffffff"
+	fg[ACTIVE]="#000000"
+}
+
+style "label"
+{
+  	fg[NORMAL]="#ffffff"
+	fg[ACTIVE]="#ff4040"
+}
+
+style "buttonlabel"
+{
+  	fg[NORMAL]="#000000"
+	fg[ACTIVE]="#000000"
+}
+
+style "panellabel"
+{
+  	fg[NORMAL]="#ffffff"
+	fg[ACTIVE]="#000000"
+}
+
+style "checklabel"
+{
+  	fg[NORMAL]="#ffffff"
+	fg[ACTIVE]="#ffffff"
+	fg[PRELIGHT]="#808080"
+}
+
+class		"GtkDialog"			style "dialog"
+class		"GtkWidget"			style "default"
+class		"GtkMenu"			style "menu"
+class		"GtkMenuBar"			style "menubar"
+
+widget_class	"*Gtk*utton*"			style "button"
+widget_class	"*Combo*"			style "combo"
+widget_class	"*GtkOptionMenu*"		style "button"
+widget_class	"*GtkCheckButton*"		style "checkbox"
+widget_class	"*GtkRadioButton*"		style "radiobox"
+widget_class	"*GtkTree*"			style "treeview"
+
+class		"GtkScrollbar"			style "scrollbar"
+class		"GtkProgressBar"		style "progressbar"
+class		"GtkRange"			style "range"
+widget		"gtk-tooltips*"			style "theme-tooltips"
+widget		"gtk-tooltip*"			style "theme-tooltips"
+
+widget_class	"*MenuItem*"			style "menuitem"
+widget_class	"*Separator*"			style "menusep"
+
+widget_class	"*Toolbar*"			style "toolbar"
+widget_class	"*Panel*"			style "panel"
+
+widget_class	"*GtkLabel*"			style "label"
+widget_class	"*GtkButton*GtkLabel*"		style "buttonlabel"
+
+
+widget_class	"*GtkNotebook*GtkLabel*"	style "notebook"
+
+widget_class	"*GtkCheckButton*GtkLabel*"	style "checklabel"
+widget_class	"*GtkRadioButton*GtkLabel*"	style "checklabel"
+widget_class	"*GtkToggleButton*GtkLabel*"	style "buttonlabel"
+
+widget_class	"*Panel*GtkLabel*"		style "panellabel"
+widget_class	"*Toolbar*GtkLabel*"		style "toolbarlabel"
+

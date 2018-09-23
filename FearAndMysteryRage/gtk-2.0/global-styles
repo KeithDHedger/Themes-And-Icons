@@ -1,0 +1,40 @@
+
+style	"default"
+{
+	GtkButton::default_border={ 2, 2, 2, 2 }
+	GtkButton::default_outside_border={ 2, 2, 2, 2 }
+	xthickness=1
+	ythickness=1
+
+	GtkWidget::focus-line-width=0
+	GtkScrollbar::slider_width=16
+
+	GtkRange::trough-border=0
+	GtkRange::slider-width=24
+	GtkRange::stepper-size=20
+
+	fg[NORMAL]="#000000"
+	fg[ACTIVE]="#ffffff"
+	fg[PRELIGHT]="#000000"
+	fg[SELECTED]="#000000"
+	fg[INSENSITIVE]="#000000"
+
+	bg_pixmap[NORMAL]="pat.png"
+	bg_pixmap[ACTIVE]="pat.png"
+	bg_pixmap[SELECTED]="pat.png"
+	bg_pixmap[INSENSITIVE]="pat.png"
+}
+
+
+style	"dialog"
+{
+	GtkWidget::focus-line-width=0
+	GtkScrollbar::slider_width=14
+	GtkRange::trough_border=0
+
+	fg[NORMAL]="#000000"
+	fg[PRELIGHT]="#000000"
+	bg_pixmap[NORMAL]="pat.png"
+	bg_pixmap[INSENSITIVE]="pat.png"
+}
+
