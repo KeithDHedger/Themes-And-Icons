@@ -1,0 +1,55 @@
+
+style	"menusep"
+{
+	GtkWidget::wide-separators = 1
+	GtkWidget::separator-height = 7
+
+	engine	"pixmap"
+		{
+			image
+				{
+				function=BOX
+				file="menusep.png"
+				stretch=TRUE
+				border={ 0, 0, 0, 0 }
+				}
+		}
+}
+
+style	"menuitem"
+{
+	engine	"pixmap"
+	{
+		image
+			{
+			function=BOX
+			file="menuitem.png"
+			stretch=TRUE
+			}
+	}
+}
+
+style	"menubar"
+{
+	fg[NORMAL]="#000000"
+	fg[PRELIGHT]="#404040"
+
+	engine	"pixmap"
+		{
+		image
+			{
+				function=BOX
+				file="menubar.png"
+				border={2,2,2,2}
+				stretch=TRUE
+			}
+		}
+}
+
+style	"menu"
+{
+	fg[NORMAL]="#000000"
+	fg[PRELIGHT]="#ffffff"
+	bg_pixmap[NORMAL]="menufill.png"
+}
+

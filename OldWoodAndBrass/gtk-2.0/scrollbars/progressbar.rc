@@ -1,0 +1,48 @@
+
+style "progressbar" = "default"
+{
+	xthickness=0
+	ythickness=0
+
+	bg[PRELIGHT] = "#FFFFFF"
+	fg[PRELIGHT] = "#FFFFFF"
+
+	engine "pixmap"
+		{
+			image
+				{
+					function=BOX
+					detail="trough"
+					border={2,2,2,2}
+					file="trough-progress-horiz.png"
+					stretch=TRUE
+					orientation=HORIZONTAL
+				}
+			image
+				{
+					function=BOX
+					detail="trough"
+					border={2,2,2,2}
+					file="trough-progress-vert.png"
+					stretch=TRUE
+					orientation=VERTICAL
+				}
+			image
+				{
+					function=BOX
+					detail="bar"
+					file="slider-horiz.png"
+					stretch=FALSE
+					orientation=HORIZONTAL
+				}
+			image
+				{
+					function=BOX
+					detail="bar"
+					file="slider-vert.png"
+					stretch=FALSE
+					orientation=VERTICAL
+				}
+		}
+}
+
