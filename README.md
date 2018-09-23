@@ -33,3 +33,5 @@ FearAndMysteryRageIcons
 
 HalloweenIcons
 
+nouveGnomeBrass
+
