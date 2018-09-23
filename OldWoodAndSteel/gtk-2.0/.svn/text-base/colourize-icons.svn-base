@@ -1,0 +1,13 @@
+#!/bin/bash
+
+find -iname "*.png" | while read file
+	do
+
+	if [ ! -L "$file" ];then
+		echo Converting "$file" ...
+		convert "$file"  -modulate 100,0,300 "$file"
+	fi
+done
+
+
+
