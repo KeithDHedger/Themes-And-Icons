@@ -37,3 +37,5 @@ nouveGnomeBrass
 
 nouveGnomeSteel
 
+OldBrownWoodIcons
+
