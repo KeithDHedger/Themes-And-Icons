@@ -1,0 +1,91 @@
+style "range"
+{
+	engine "pixmap"
+		{
+
+#troughs
+			image
+				{
+					function=BOX
+					file="trough-horiz.png"
+					stretch=TRUE
+					orientation=HORIZONTAL
+				}
+
+			image
+				{
+					function=BOX
+					file="trough-vert.png"
+					stretch=TRUE
+					orientation=VERTICAL
+				}
+#horiz norm
+			image
+				{
+					function=SLIDER
+					state=NORMAL
+					file="null.png"
+					stretch=TRUE
+					overlay_file="slider-horiz.png"
+					overlay_stretch=FALSE
+					orientation=HORIZONTAL
+				}
+#horiz rollover
+			image
+				{
+					function=SLIDER
+					state=PRELIGHT
+					file="null.png"
+					stretch=TRUE
+					overlay_file="slider-horiz-pre.png"
+					overlay_stretch=FALSE
+					orientation=HORIZONTAL
+				}
+#horiz inactive
+			image
+				{
+					function=SLIDER
+					state=INSENSITIVE
+					file="null.png"
+					stretch=TRUE
+					overlay_file="slider-horiz-ia.png"
+					overlay_stretch=FALSE
+					orientation=HORIZONTAL
+				}
+#vert normal
+			image
+				{
+					function=SLIDER
+					state=NORMAL
+					file="null.png"
+					stretch=TRUE
+					overlay_file="slider-vert.png"
+					overlay_stretch=FALSE
+					orientation=VERTICAL
+				}
+#vert rollover
+			image
+				{
+					function=SLIDER
+					state=PRELIGHT
+					file="null.png"
+					stretch=TRUE
+					overlay_file="slider-vert-pre.png"
+					overlay_stretch=FALSE
+					orientation=VERTICAL
+				}
+#vert inactive
+			image
+				{
+					function=SLIDER
+					state=INSENSITIVE
+					file="null.png"
+					stretch=TRUE
+					overlay_file="slider-vert-ia.png"
+					overlay_stretch=FALSE
+					orientation=VERTICAL
+				}
+		}
+
+}
+

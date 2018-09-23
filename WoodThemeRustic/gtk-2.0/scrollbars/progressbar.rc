@@ -1,0 +1,48 @@
+style "progressbar" = "default"
+{
+	xthickness = 2
+	ythickness = 2
+
+	bg[PRELIGHT] = "#FFFFFF"
+	fg[PRELIGHT] = "#FFFFFF"
+
+	engine "pixmap"
+		{
+			image
+				{
+					function	= BOX
+					detail		= "trough"
+					file		= "trough-progressbar-horiz.png"
+					stretch		= FALSE
+					orientation	= HORIZONTAL
+				}
+
+			image
+				{
+					function	= BOX
+					detail		= "trough"
+					file		= "trough-progressbar-vert.png"
+					stretch		= FALSE
+					orientation	= VERTICAL
+				}
+
+			image
+				{
+					function	= BOX
+					detail		= "bar"
+					file		= "progressbar-horiz.png"
+					stretch		= FALSE
+					orientation	= HORIZONTAL
+				}
+
+			image
+				{
+					function	= BOX
+					detail		= "bar"
+					file		= "progressbar-vert.png"
+					stretch		= FALSE
+					orientation	= VERTICAL
+				}
+		}
+}
+

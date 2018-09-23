@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Wood Theme Rustic
+Type=X-GNOME-Metatheme
+Comment=A woody theme for gnome ©K.D.Hedger 2008-2012
+
+[X-GNOME-Metatheme]
+GtkTheme=WoodThemeRustic
+MetacityTheme=WoodThemeRustic
+IconTheme=WoodIcons
+CursorTheme=default
+
