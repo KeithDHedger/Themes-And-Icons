@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Ye Oldy Xmas Theme
+Type=X-GNOME-Metatheme
+Comment=A bit of fun for the holidays
+
+[X-GNOME-Metatheme]
+GtkTheme=OldyXmasTheme
+MetacityTheme=OldyXmasTheme
+IconTheme=XmasIcons
+CursorTheme=XSilver
+CursorSize=32
+

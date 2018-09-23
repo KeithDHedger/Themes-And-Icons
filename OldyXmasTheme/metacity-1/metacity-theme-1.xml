@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<metacity_theme>
+<info>
+	<name>OldyXmasTheme</name>
+	<author>K.D.Hedger</author>
+	<copyright> - </copyright>
+	<date>2011</date>
+	<description>Happy Xmas</description>
+</info>
+
+<frame_geometry name="normal" title_scale="medium" rounded_bottom_left="true" rounded_bottom_right="true" rounded_top_left="true" rounded_top_right="true">
+	<distance name="left_width" value="4"/>
+	<distance name="right_width" value="4"/>
+	<distance name="bottom_height" value="16"/>
+	<distance name="left_titlebar_edge" value="16"/>
+	<distance name="right_titlebar_edge" value="16"/>
+	<distance name="button_width" value="32"/>
+	<distance name="button_height" value="64"/>
+	<distance name="title_vertical_pad" value="0"/>
+	<border name="title_border" left="0" right="0" top="0" bottom="24"/>
+	<border name="button_border" left="2" right="2" top="2" bottom="0"/>
+</frame_geometry>
+
+<frame_geometry name="borderless" rounded_top_left="true" rounded_top_right="true" parent="normal">
+	<distance name="right_width" value="0"/>
+	<distance name="left_width" value="0"/>
+	<distance name="bottom_height" value="0"/>
+</frame_geometry>
+
+
+
+<!-- Border and Titlebar -->
+
+<draw_ops name="ritetile">
+	<line color="#A11519" x1="0" y1="0" x2="0" y2="height" width="7"/>
+</draw_ops>
+
+<draw_ops name="lefttile">
+	<line color="#A11519" x1="0" y1="0" x2="0" y2="height" width="7"/>
+</draw_ops>
+
+<draw_ops name="midtile">
+	<image filename="home.png" alpha="1.0" x="0" y="0" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="midtileia">
+	<image filename="homeia.png" alpha="1.0" x="0" y="0" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="lefttileinactive">
+	<line color="#11711D" x1="0" y1="0" x2="0" y2="height" width="7"/>
+</draw_ops>
+
+<draw_ops name="ritetileinactive">
+	<line color="#11711D" x1="0" y1="0" x2="0" y2="height" width="7"/>
+</draw_ops>
+
+<draw_ops name="title_tile">
+	<tile name="midtile" tile_width="74" tile_height="64"/>
+	<image filename="top_left1.png" x="0" y="0" width="object_width" height="object_height"/>
+	<image filename="top_rite.png" x="width - object_width" y="64-object_height" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="bottom_active">
+	<rectangle color="#A11519" x="0" y="0" width="width" height="height" filled="true"/>
+	<image filename="hc.png" alpha="1.0" x="(width/2)-(object_width/2)" y="height - (object_height)+4" width="object_width" height="object_height"/>
+</draw_ops>
+
+<draw_ops name="bottom_inactive">
+	<rectangle color="#11711D" x="0" y="0" width="width" height="height" filled="true"/>
+	<image filename="ny.png" alpha="1.0" x="(width/2)-(object_width/2)" y="height - (object_height)+4" width="object_width" height="object_height"/>	 
+</draw_ops>
+
+<draw_ops name="title_tileia">
+	<tile name="midtileia" tile_width="74" tile_height="64"/>
+	<image filename="top_leftia.png" x="0" y="0" width="object_width" height="object_height"/>
+	<image filename="top_riteia.png" x="width - object_width" y="64-object_height" width="object_width" height="object_height"/>
+</draw_ops>
+
+<!-- Active (focused) style -->
+<frame_style name="focused" geometry="normal">
+	<piece position="right_edge">
+		<draw_ops>
+			<tile name="ritetile" tile_width="20" tile_height="40"/>
+		</draw_ops>
+	</piece>
+
+	<piece position="left_edge">
+		<draw_ops>
+			<tile name="lefttile" tile_width="20" tile_height="40"/>
+		</draw_ops>
+	</piece>
+
+	<piece position="bottom_edge">
+		<draw_ops>
+			<include name="bottom_active"/>
+		</draw_ops>
+	</piece>
+
+	<piece position="title">
+		<draw_ops>
+			<title color="#ffffff" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
+		</draw_ops>
+	</piece>
+
+	<piece position="titlebar">
+		<draw_ops>
+			<rectangle color="#A11519" x="0" y="0" width="width" height="height" filled="true"/>
+			<include name="title_tile"/>
+		</draw_ops>
+	</piece>
+
+	<button function="close" state="normal">
+		<draw_ops>
+			<image filename="windowdot.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+		</button>
+
+	<button function="close" state="pressed">
+		<draw_ops>
+			<image filename="windowclose2.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="close" state="prelight">
+		<draw_ops>
+			<image filename="windowclose1.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="minimize" state="normal">
+		<draw_ops>
+			<image filename="windowdot.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+		</button>
+
+	<button function="minimize" state="pressed">
+		<draw_ops>
+			<image filename="windowmin2.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="minimize" state="prelight">
+		<draw_ops>
+			<image filename="windowmin1.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="maximize" state="normal">
+		<draw_ops>
+			<image filename="windowdot.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="maximize" state="pressed">
+		<draw_ops>
+			<image filename="windowmax2.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="maximize" state="prelight">
+		<draw_ops>
+			<image filename="windowmax1.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="menu" state="normal">
+		<draw_ops>
+			<image filename="windowtool.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="menu" state="pressed">
+		<draw_ops>
+			<image filename="windowtool2.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="menu" state="prelight">
+		<draw_ops>
+			<image filename="windowtool1.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+</frame_style>
+
+<!-- Active (focused) shaded style -->
+
+<frame_style name="focused_shaded" geometry="normal" parent="focused">
+</frame_style>
+
+<!-- Inactive style -->
+<frame_style name="normal" geometry="normal">
+
+	<piece position="right_edge">
+		<draw_ops>
+			<tile name="ritetileinactive" tile_width="20" tile_height="40"/>
+		</draw_ops>
+	</piece>
+
+	<piece position="left_edge">
+		<draw_ops>
+			<tile name="lefttileinactive" tile_width="20" tile_height="40"/>
+		</draw_ops>
+	</piece>
+
+	<piece position="bottom_edge">
+		<draw_ops>
+			<include name="bottom_inactive"/>
+		</draw_ops>
+	</piece>
+
+	<piece position="title">
+		<draw_ops>
+			<title color="#808080" x="(width - title_width) / 2" y="(height - title_height) / 2"/>
+		</draw_ops>
+	</piece>
+
+	<piece position="titlebar">
+		<draw_ops>
+			<include name="title_tileia"/>
+		</draw_ops>
+	</piece>
+
+	<button function="close" state="normal">
+		<draw_ops>
+			<image filename="windowdotia.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="close" state="pressed">
+		<draw_ops>
+			<image filename="windowdotia.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="minimize" state="normal">
+		<draw_ops>
+			<image filename="windowdotia.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="minimize" state="pressed">
+		<draw_ops>
+			<image filename="windowdotia.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="maximize" state="normal">
+		<draw_ops>
+			<image filename="windowdotia.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="maximize" state="pressed">
+		<draw_ops>
+			<image filename="windowdotia.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="menu" state="normal">
+		<draw_ops>
+			<image filename="windowtoolZ.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+	<button function="menu" state="pressed">
+		<draw_ops>
+			<image filename="windowtoolZ.png" x="0" y="0" width="object_width" height="object_height"/>
+		</draw_ops>
+	</button>
+
+</frame_style>
+<!-- Active (focused) shaded style -->
+<frame_style name="normal_shaded" geometry="normal" parent="normal">
+</frame_style>
+
+<frame_style_set name="normal">
+<frame focus="yes" state="shaded" style="focused_shaded"/>
+<frame focus="yes" state="normal" resize="both" style="focused"/>
+<frame focus="yes" state="maximized" style="focused"/>
+<frame focus="yes" state="maximized_and_shaded" style="focused_shaded"/>
+<frame focus="no" state="normal" resize="both" style="normal"/>
+<frame focus="no" state="shaded" style="normal_shaded"/>
+<frame focus="no" state="maximized" style="normal"/>
+<frame focus="no" state="maximized_and_shaded" style="normal_shaded"/>
+</frame_style_set>
+
+<window type="normal" style_set="normal"/>
+<window type="dialog" style_set="normal"/>
+<window type="modal_dialog" style_set="normal"/>
+<window type="menu" style_set="normal"/>
+<window type="utility" style_set="normal"/>
+<window type="border" style_set="normal"/>
+
+</metacity_theme>
