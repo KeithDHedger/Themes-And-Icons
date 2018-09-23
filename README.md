@@ -31,3 +31,5 @@ FearAndMysteryIcons
 
 FearAndMysteryRageIcons
 
+HalloweenIcons
+
