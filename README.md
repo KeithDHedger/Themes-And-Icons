@@ -1,5 +1,5 @@
 # Themes
-Themes and Icon sets for LFSDesktop and Xfce4
+Themes for LFSDesktop and Xfce4
 
 Theme List:
 
@@ -22,4 +22,10 @@ OldyXmasTheme
 WoodThemeRustic
 
 WoodThemeSmooth
+
+
+
+Icon sets for LFSDesktop and Xfce4
+
+FearAndMysteryIcons
 
