@@ -1,57 +1,34 @@
 # Themes
 
-To checkout just the theme/iconset you want do:
+To checkout just the theme/iconset you want do:<br>
+git clone -n https://github.com/KeithDHedger/Themes-And-Icons.git  --depth 1<br>
+git checkout HEAD nouveGnomeSteel<br>
+For instance.
 
-git clone -n https://github.com/KeithDHedger/Themes-And-Icons.git  --depth 1
+**Themes for LFSDesktop and Xfce4**<br>
 
-git checkout HEAD nouveGnomeSteel
-
-For instance 
-
-
-Themes for LFSDesktop and Xfce4
-
-Theme List:
-
-Captain America.
-
-AllHallowsEve.
-
-Fear And Mystery.
-
-FearAndMysteryRage
-
-OldBrownWood
-
-OldWoodAndBrass
-
-OldWoodAndSteel
-
-OldyXmasTheme
-
-WoodThemeRustic
-
-WoodThemeSmooth
+Captain America.<br>
+AllHallowsEve.<br>
+Fear And Mystery.<br>
+FearAndMysteryRage.<br>
+OldBrownWood.<br>
+OldWoodAndBrass.<br>
+OldWoodAndSteel.<br>
+OldyXmasTheme.<br>
+WoodThemeRustic.<br>
+WoodThemeSmooth.<br>
 
 
+**Icon sets for LFSDesktop and Xfce4.**<br>
 
-Icon sets for LFSDesktop and Xfce4
+FearAndMysteryIcons.<br>
+FearAndMysteryRageIcons.<br>
+HalloweenIcons.<br>
+nouveGnomeBrass.<br>
+nouveGnomeSteel.<br>
+OldBrownWoodIcons.<br>
+OldGreyWoodIcons.<br>
+WoodIcons.<br>
+XmasIcons.<br>
 
-FearAndMysteryIcons
-
-FearAndMysteryRageIcons
-
-HalloweenIcons
-
-nouveGnomeBrass
-
-nouveGnomeSteel
-
-OldBrownWoodIcons
-
-OldGreyWoodIcons
-
-WoodIcons
-
-XmasIcons
 
