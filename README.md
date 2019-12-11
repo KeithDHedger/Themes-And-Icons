@@ -15,6 +15,7 @@ OldBrownWood.<br>
 OldWoodAndBrass.<br>
 OldWoodAndSteel.<br>
 OldyXmasTheme.<br>
+OldWinterWood.<br>
 WoodThemeRustic.<br>
 WoodThemeSmooth.<br>
 
@@ -28,6 +29,7 @@ nouveGnomeBrass.<br>
 nouveGnomeSteel.<br>
 OldBrownWoodIcons.<br>
 OldGreyWoodIcons.<br>
+OldWinterWoodIcons.<br>
 WoodIcons.<br>
 XmasIcons.<br>
 
