@@ -8,10 +8,9 @@ For instance.
 **Themes for LFSDesktop and Xfce4**<br>
 
 Captain America.<br>
-![Alt text](pics/CaptainAmerica.png?raw=true "Captain America")
+![Alt text](pics/CaptainAmerica.png?raw=true "Captain America")<br>
 AllHallowsEve.<br>
-![Alt text](pics/AllHallowsEve.png?raw=true "All Hallows Eve")
-
+![Alt text](pics/AllHallowsEve.png?raw=true "All Hallows Eve")<br>
 Fear And Mystery.<br>
 FearAndMysteryRage.<br>
 OldBrownWood.<br>
