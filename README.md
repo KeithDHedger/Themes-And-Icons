@@ -12,15 +12,23 @@ Captain America.<br>
 AllHallowsEve.<br>
 ![Alt text](pics/AllHallowsEve.png?raw=true "All Hallows Eve")<br>
 Fear And Mystery.<br>
-![Alt text](pics/FearAndMystery.png?raw=true "FearAndMystery")<br>
+![Alt text](pics/FearAndMystery.png?raw=true "Fear And Mystery")<br>
 FearAndMysteryRage.<br>
+![Alt text](pics/FearAndMysteryRage.png?raw=true "Fear And Mystery Rage")<br>
 OldBrownWood.<br>
+![Alt text](pics/OldBrownWood.png?raw=true "Old Brown Wood")<br>
 OldWoodAndBrass.<br>
+![Alt text](pics/OldWoodAndBrass.png?raw=true "Old Wood And Brass")<br>
 OldWoodAndSteel.<br>
+![Alt text](pics/OldWoodAndSteel.png?raw=true "Old Wood And Steel")<br>
 OldyXmasTheme.<br>
+![Alt text](pics/OldyXmasTheme.png?raw=true "Oldy Xmas Theme")<br>
 OldWinterWood.<br>
+![Alt text](pics/OldWinterWood.png?raw=true "Old Winter Wood")<br>
 WoodThemeRustic.<br>
+![Alt text](pics/WoodThemeRustic.png?raw=true "Wood Theme Rustic")<br>
 WoodThemeSmooth.<br>
+![Alt text](pics/WoodThemeSmooth.png?raw=true "Wood Theme Smooth")<br>
 
 
 **Icon sets for LFSDesktop and Xfce4.**<br>
