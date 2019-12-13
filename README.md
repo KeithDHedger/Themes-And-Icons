@@ -23,13 +23,12 @@ OldWoodAndSteel.<br>
 ![Alt text](pics/OldWoodAndSteel.png?raw=true "Old Wood And Steel")<br>
 OldyXmasTheme.<br>
 ![Alt text](pics/OldyXmasTheme.png?raw=true "Oldy Xmas Theme")<br>
-OldWinterWood.<br>
-![Alt text](pics/OldWinterWood.png?raw=true "Old Winter Wood")<br>
 WoodThemeRustic.<br>
 ![Alt text](pics/WoodThemeRustic.png?raw=true "Wood Theme Rustic")<br>
 WoodThemeSmooth.<br>
 ![Alt text](pics/WoodThemeSmooth.png?raw=true "Wood Theme Smooth")<br>
-
+OldWinterWood ( Window border only ).<br>
+![Alt text](pics/OldWinterWood.png?raw=true "Old Winter Wood")<br>
 
 **Icon sets for LFSDesktop and Xfce4.**<br>
 
