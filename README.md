@@ -49,7 +49,7 @@ OldGreyWoodIcons.<br>
 OldWinterWoodIcons.<br>
 ![Alt text](pics/OldWinterWoodIcons.png?raw=true "Old Winter Wood Icons")<br>
 WoodIcons.<br>
-1[Alt text](pics/WoodIcons.png?raw=true "Wood Icons")<br>
+![Alt text](pics/WoodIcons.png?raw=true "Wood Icons")<br>
 XmasIcons.<br>
 ![Alt text](pics/XmasIcons.png?raw=true "Xmas Icons")<br>
 
