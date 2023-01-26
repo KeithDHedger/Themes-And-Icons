@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Old Wood And Steel
+Type=X-GNOME-Metatheme
+Comment=A woody/haunty/greyey/stelly theme for gnome ©K.D.Hedger 2012
+
+[X-GNOME-Metatheme]
+GtkTheme=OldWoodAndSteel
+MetacityTheme=OldWoodAndSteel
+IconTheme=FearAndMysteryIcons
+CursorTheme=XSilver
+

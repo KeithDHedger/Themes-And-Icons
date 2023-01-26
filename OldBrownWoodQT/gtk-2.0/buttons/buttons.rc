@@ -1,0 +1,188 @@
+
+style "spinbutton"
+{
+  	fg[NORMAL]="#f0f0f0"
+	fg[ACTIVE]="#f0f0f0"
+	fg[PRELIGHT]="#ffc403"
+	text[NORMAL]="#000000"
+	text[PRELIGHT]="#ffc403"
+	text[ACTIVE]="#c0c0c0"
+
+	engine "pixmap"
+		{
+
+		image
+			{
+				function=BOX
+				detail="buttondefault"
+				file="button-default.png"
+				border={0,0,0,0}
+				stretch=TRUE
+			}
+		image 
+			{
+				function=BOX
+				state=NORMAL
+				file="button-normal.png"
+				stretch=TRUE
+				overlay_file="button-normal-over.png"
+              		overlay_stretch=TRUE
+				overlay_border={2,2,2,2}
+			}	
+
+		image
+			{
+				function=BOX
+				shadow=OUT
+				state= PRELIGHT
+				file="button-prelight.png"
+				stretch=TRUE
+				overlay_file="button-normal-over.png"
+              		overlay_stretch=TRUE
+				overlay_border={2,2,2,2}
+			}
+
+		image
+			{
+				function=BOX
+				shadow=IN
+				state=PRELIGHT
+				file="button-prelight-in.png"
+				stretch=TRUE
+				overlay_file="button-in-over.png"
+              		overlay_stretch=TRUE
+				overlay_border={2,2,2,2}
+			}
+
+		image
+			{
+				function= BOX
+				state=ACTIVE
+				file="button-pressed.png"
+				stretch=TRUE
+				overlay_file="button-in-over.png"
+              		overlay_stretch=TRUE
+				overlay_border={2,2,2,2}
+			}	
+
+		image 
+			{
+				function=BOX
+				shadow=OUT
+				state=INSENSITIVE
+				file="button-normal-ia.png"
+				stretch=TRUE
+				overlay_file="button-in-over.png"
+              		overlay_stretch=TRUE
+				overlay_border={2,2,2,2}
+			}
+
+		image 
+			{
+				function=BOX
+				shadow=IN
+				state=INSENSITIVE
+				file="button-normal-in-ia.png"
+				stretch=TRUE
+				overlay_file="button-in-over.png"
+              		overlay_stretch=TRUE
+				overlay_border={2,2,2,2}
+			}
+		}
+}
+
+style "button"
+{
+	GtkButton::child_displacement_x = 1
+	GtkButton::child_displacement_y = 1
+  	
+  	fg[NORMAL]="#f0f0f0"
+	fg[ACTIVE]="#f0f0f0"
+	fg[PRELIGHT]="#ffc403"
+	text[NORMAL]="#000000"
+	text[PRELIGHT]="#ffc403"
+	text[ACTIVE]="#c0c0c0"
+
+	engine "pixmap"
+		{
+
+		image
+			{
+				function=BOX
+				detail="buttondefault"
+				file="button-default.png"
+				border={0,0,0,0}
+				stretch=TRUE
+			}
+		image 
+			{
+				function=BOX
+				state=NORMAL
+				file="button-normal.png"
+				stretch=FALSE
+				overlay_file="button-normal-over.png"
+              		overlay_stretch=TRUE
+				overlay_border={2,2,2,2}
+			}	
+
+		image
+			{
+				function=BOX
+				shadow=OUT
+				state= PRELIGHT
+				file="button-prelight.png"
+				stretch=FALSE
+				overlay_file="button-normal-over.png"
+              		overlay_stretch=TRUE
+				overlay_border={2,2,2,2}
+			}
+
+		image
+			{
+				function=BOX
+				shadow=IN
+				state=PRELIGHT
+				file="button-prelight-in.png"
+				stretch=FALSE
+				overlay_file="button-in-over.png"
+              		overlay_stretch=TRUE
+				overlay_border={2,2,2,2}
+			}
+
+		image
+			{
+				function= BOX
+				state=ACTIVE
+				file="button-pressed.png"
+				stretch=FALSE
+				overlay_file="button-in-over.png"
+              		overlay_stretch=TRUE
+				overlay_border={2,2,2,2}
+			}	
+
+		image 
+			{
+				function=BOX
+				shadow=OUT
+				state=INSENSITIVE
+				file="button-normal-ia.png"
+				stretch=FALSE
+				overlay_file="button-in-over.png"
+              		overlay_stretch=TRUE
+				overlay_border={2,2,2,2}
+			}
+
+		image 
+			{
+				function=BOX
+				shadow=IN
+				state=INSENSITIVE
+				file="button-normal-in-ia.png"
+				stretch=FALSE
+				overlay_file="button-in-over.png"
+              		overlay_stretch=TRUE
+				overlay_border={2,2,2,2}
+			}
+		}
+}
+

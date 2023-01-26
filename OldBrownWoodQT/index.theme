@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Old Brown Wood QT
+Type=X-GNOME-Metatheme
+Comment=A Brown Wood Theme For QT5 Using Gtk2 Pluging ©K.D.Hedger 2012
+
+[X-GNOME-Metatheme]
+GtkTheme=OldBrownWood
+IconTheme=OldBrownWoodIcons
+CursorTheme=Golden-XCursors-3D-0.8
+BackdropStyle=2
+BackgroundImage=/home/keithhedger/.local/share/xfce4/backdrops/pat.png
