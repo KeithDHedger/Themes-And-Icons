@@ -27,8 +27,6 @@ Wood ThemeR ustic.<br>
 ![Alt text](pics/WoodThemeRustic.png?raw=true "Wood Theme Rustic")<br>
 Wood Theme Smooth.<br>
 ![Alt text](pics/WoodThemeSmooth.png?raw=true "Wood Theme Smooth")<br>
-Old Winter Wood ( Window border only ).<br>
-![Alt text](pics/OldWinterWood.png?raw=true "Old Winter Wood")<br>
 Winter Wood.<br>
 ![Alt text](pics/WinterWood.png?raw=true "Winter Wood")<br>
 
