@@ -33,7 +33,7 @@ Wood Theme Smooth.<br>
 Winter Wood.<br>
 ![Alt text](pics/WinterWood.png?raw=true "Winter Wood")<br>
 Spring Wood.<br>
-![Alt text](pics/SpringWoodQT.png?raw=true "Winter Wood")<br>
+![Alt text](pics/SpringWoodQT.png?raw=true "Spring Wood")<br>
 
 **Icon sets for LFSDesktop and Xfce4.**<br>
 
@@ -53,10 +53,10 @@ Old Grey Wood Icons.<br>
 ![Old Grey Wood Icons](pics/OldGreyWoodIcons.png?raw=true "Old Grey Wood Icons")<br>
 Old Winter Wood Icons.<br>
 ![Old Winter Wood Icons](pics/OldWinterWoodIcons.png?raw=true "Old Winter Wood Icons")<br>
+Spring Wood Icons.<br>
+![Spring Wood Icons](pics/SpringWoodIcons.png?raw=true "Spring Wood Icons")<br>
 Wood Icons.<br>
-![Old Spring Wood Icons](pics/OldWinterWoodIcons.png?raw=true "Old Winter Wood Icons")<br>
-Wood Icons.<br>
-![Wood Icons](pics/SpringWoodIcons.png?raw=true "Wood Icons")<br>
+![Wood Icons](pics/WoodIcons.png?raw=true "Wood Icons")<br>
 Xmas Icons.<br>
 ![Xmas Icons](pics/XmasIcons.png?raw=true "Xmas Icons")<br>
 
