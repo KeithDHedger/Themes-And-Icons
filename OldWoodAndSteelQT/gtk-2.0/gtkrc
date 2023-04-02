@@ -1,4 +1,6 @@
 
+gtk_color_scheme = "fg_color:#000000\nbg_color:#637D86\nbase_color:#A1C0CC\ntext_color:#000000\nselected_bg_color:#3F5B66\nselected_fg_color:#30BABB"
+
 include	"checkboxes/checkboxes.rc"
 include	"radioboxes/radioboxes.rc"
 include	"buttons/buttons.rc"
@@ -6,10 +8,10 @@ include	"menus/menus.rc"
 include	"toolbar/toolbar.rc"
 include	"scrollbars/scrollbar-styles"
 include	"scrollbars/progressbar.rc"
-include "range/range.rc"
+include	"range/range.rc"
 
 include	"global-styles"
-include "icons/iconrc"
+#include	"../pixmaps/icon-styles"
 
 #odd ones
 
@@ -21,9 +23,18 @@ style "theme-tooltips"
 
 style	"combo"
 {
-  	fg[NORMAL]="#000000"
-	fg[ACTIVE]="#404040"
-	fg[PRELIGHT]="#808080"
+	fg[NORMAL]="#000000"
+	text[NORMAL]="#ffffff"
+	text[PRELIGHT]="#ffc403"
+	text[ACTIVE]="#c0c0c0"
+}
+
+style	"comboentry"
+{
+	fg[NORMAL]="#000000"
+	text[NORMAL]="#000000"
+	text[PRELIGHT]="#ffc403"
+	text[ACTIVE]="#c0c0c0"
 }
 
 style "treeview"
@@ -36,32 +47,33 @@ style "treeview"
 
 style	"iconview"
 {
-	bg[SELECTED]="#6e6e6e"
-	base[NORMAL]="#7f7f7f"
+	bg[SELECTED]="#8f7049"
+	base[NORMAL]="#808080"
 }
 
 style "notebook"
 {
-  	fg[NORMAL]="#ffffff"
-	fg[ACTIVE]="#000000"
-	fg[PRELIGHT]="#000000"
-	fg[SELECTED]="#000000"
+ # xthickness 			= 16
+#  ythickness		 	=16
 }
 
 #classes
-class			"GtkDialog"					style	"dialog"
-class			"GtkWidget"					style	"default"
-class			"*Toolbar"					style	"toolbar"
-widget_class		"*Gtk*utton*"				style	"button"
-widget_class		"*Combo*"					style	"combo"
-widget_class		"*GtkCheckButton*"			style	"checkbox"
-widget_class		"*GtkRadioButton*"			style	"radiobox"
-widget_class		"*GtkTree*"					style	"treeview"
-widget			"*IconView*"				style "iconview"
-class			"GtkScrollbar"				style	"scrollbar"
-class			"GtkRange"					style	"range"
-class			"GtkProgressBar"			style	"progressbar"
+class			"*Notebook*" style "notebook"
+class			"GtkNotebook" style "notebook"
+class			"GtkWidget" style "default"
+class			"*Toolbar*" style "toolbar"
+widget_class		"*Gtk*utton*" style "button"
+widget_class		"*Combo*" style "combo"
+widget_class		"*Combo*Entry*" style "comboentry"
+widget_class		"*GtkOptionMenu*" style "button"
+widget_class		"*GtkCheckButton*" style "checkbox"
+widget_class		"*GtkRadioButton*" style "radiobox"
+widget_class		"*GtkTree*" style "treeview"
+widget			"*IconView*" style "iconview"
+class			"GtkScrollbar" style "scrollbar"
+class			"GtkRange" style "range"
+class			"GtkProgressBar" style "progressbar"
+widget			"gtk-tooltip*" style "theme-tooltips"
+widget			"*SpinButton" style "spinbutton"
 
-widget			"gtk-tooltip*"				style	"theme-tooltips"
-widget_class		"*GtkNotebook*GtkLabel*"	style "notebook"
 

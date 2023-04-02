@@ -5,6 +5,9 @@ git clone -n https://github.com/KeithDHedger/Themes-And-Icons.git  --depth 1<br>
 git checkout HEAD nouveGnomeSteel<br>
 For instance.
 
+BUGS etc.<br>
+kdhedger68713@gmail.com<br>
+
 **Themes for LFSDesktop and Xfce4**<br>
 
 Captain America.<br>
