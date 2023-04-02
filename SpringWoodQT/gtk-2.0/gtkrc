@@ -1,0 +1,77 @@
+
+include	"checkboxes/checkboxes.rc"
+include	"radioboxes/radioboxes.rc"
+include	"buttons/buttons.rc"
+include	"menus/menus.rc"
+include	"toolbar/toolbar.rc"
+include	"scrollbars/scrollbar-styles"
+include	"scrollbars/progressbar.rc"
+include	"range/range.rc"
+
+include	"global-styles"
+#include	"../pixmaps/icon-styles"
+
+#odd ones
+
+style "theme-tooltips"
+{
+	fg[NORMAL]="#000000"
+	bg[NORMAL]="#2EA40F"
+}
+
+style	"combo"
+{
+	fg[NORMAL]="#000000"
+	text[NORMAL]="#ffffff"
+	text[PRELIGHT]="#ffc403"
+	text[ACTIVE]="#2EA40F"
+}
+
+style	"comboentry"
+{
+	fg[NORMAL]="#000000"
+	text[NORMAL]="#000000"
+	text[PRELIGHT]="#ffc403"
+	text[ACTIVE]="#2EA40F"
+}
+
+style "treeview"
+{
+  	fg[NORMAL]="#000000"
+	fg[ACTIVE]="#000000"
+	fg[PRELIGHT]="#000000"
+	fg[SELECTED]="#000000"
+}
+
+style	"iconview"
+{
+	bg[SELECTED]="#8f7049"
+	base[NORMAL]="#AEE5B0"
+}
+
+style "notebook"
+{
+ # xthickness 			= 16
+#  ythickness		 	=16
+}
+
+#classes
+class			"*Notebook*" style "notebook"
+class			"GtkNotebook" style "notebook"
+class			"GtkWidget" style "default"
+class			"*Toolbar*" style "toolbar"
+widget_class		"*Gtk*utton*" style "button"
+widget_class		"*Combo*" style "combo"
+widget_class		"*Combo*Entry*" style "comboentry"
+widget_class		"*GtkOptionMenu*" style "button"
+widget_class		"*GtkCheckButton*" style "checkbox"
+widget_class		"*GtkRadioButton*" style "radiobox"
+widget_class		"*GtkTree*" style "treeview"
+widget			"*IconView*" style "iconview"
+class			"GtkScrollbar" style "scrollbar"
+class			"GtkRange" style "range"
+class			"GtkProgressBar" style "progressbar"
+widget			"gtk-tooltip*" style "theme-tooltips"
+widget			"*SpinButton" style "spinbutton"
+
+
