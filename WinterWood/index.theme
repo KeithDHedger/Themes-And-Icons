@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Winter Wood
+Type=X-GNOME-Metatheme
+Comment=A Winter theme
+
+[X-GNOME-Metatheme]
+GtkTheme=WinterWood
+IconTheme=OldWinterWoodIcons
+CursorTheme=XSilver
+CursorSize=32
+MetacityTheme=WinterWood
