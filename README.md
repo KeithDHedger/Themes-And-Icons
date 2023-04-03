@@ -5,6 +5,8 @@ git clone -n https://github.com/KeithDHedger/Themes-And-Icons.git  --depth 1<br>
 git checkout HEAD nouveGnomeSteel<br>
 For instance.
 
+Themes ending in 'QT' have been tweaked to integrate QT5 and gtk better there is also a *-qt5ct.conf file in the main folder of the theme which you should put in ~/.config/qt5ct/colors for use with the QT5 Settings app.
+
 BUGS etc.<br>
 kdhedger68713@gmail.com<br>
 
