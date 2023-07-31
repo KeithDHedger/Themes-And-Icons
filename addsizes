@@ -49,5 +49,3 @@ while read
 		echo "Type=$icontype" >>index.theme
 		echo >>index.theme
 	done< <(find -type d -mindepth 2 |sort -V|sed 's@\./@@g')
-
-echo "Directories=$(find -type d -mindepth 2 |sort -V|tr '\n' ','|sed 's@\./@@g')" >>index.theme
