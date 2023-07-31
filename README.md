@@ -6,21 +6,21 @@ git checkout HEAD nouveGnomeSteel<br>
 
 Themes ending in 'QT' have been tweaked to integrate QT5 and gtk better there is also a *-qt5ct.conf file in the main folder of the theme which you should put in ~/.config/qt5ct/colors for use with the QT5 Settings app.
 
-To keep download/repo sizes at a managable size, only one size of icons are included in each theme, to generate extra icon sizes cd into the relevent folder and run the 'addsizes' script from the main repo eg:
-For instance.
-cd /tmp
-git clone -n https://github.com/KeithDHedger/Themes-And-Icons.git  --depth 1
-cd Themes-And-Icons/
-git checkout HEAD nouveGnomeSteel
-git checkout HEAD addsizes
-cd nouveGnomeSteel
-../addsizes scalable "16 22 24 32 48"
-
-Then just copy the 'nouveGnomeSteel' folder to your icon folder, local is ~/.icons or global is /usr/shar/icons.
-
-This will build the extra sizes from the scalable folder ( some icon themes use the folder 256x256 )
-You will need ImageMagick installed for this, most distros install it as standard.
-
+To keep download/repo sizes at a managable size, only one size of icons are included in each theme, to generate extra icon sizes cd into the relevent folder and run the 'addsizes' script from the main repo eg:<br>
+For instance.<br>
+cd /tmp<br>
+git clone -n https://github.com/KeithDHedger/Themes-And-Icons.git  --depth 1<br>
+cd Themes-And-Icons/<br>
+git checkout HEAD nouveGnomeSteel<br>
+git checkout HEAD addsizes<br>
+cd nouveGnomeSteel<br>
+../addsizes scalable "16 22 24 32 48"<br>
+<br>
+Then just copy the 'nouveGnomeSteel' folder to your icon folder, local is ~/.icons or global is /usr/shar/icons.<br>
+<br>
+This will build the extra sizes from the scalable folder ( some icon themes use the folder 256x256 )<br>
+You will need ImageMagick installed for this, most distros install it as standard.<br>
+<br>
 BUGS etc.<br>
 kdhedger68713@gmail.com<br>
 
