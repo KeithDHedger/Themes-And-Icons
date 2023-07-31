@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=WoodIcons
 Inherits=Tango,gnome
-Comment=Icon theme adapted from the OSX Murder Mystery icon theme by Zachary Lutterman
+Comment=Icon theme adapted from the high contrast set.
 Directories=scalable/apps,scalable/spinner,scalable/places,scalable/mimetypes,scalable/devices,scalable/emblems,scalable/status
 
 [scalable/status]
