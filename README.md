@@ -17,6 +17,7 @@ cd nouveGnomeSteel<br>
 ../addsizes scalable "16 22 24 32 48"<br>
 <br>
 Then just copy the 'nouveGnomeSteel' folder to your icon folder, local is ~/.icons or global is /usr/shar/icons.<br>
+For convienience you could also copy the addsizes script to /usr/bin so you only need to check it out once.<br>
 <br>
 This will build the extra sizes from the scalable folder ( some icon themes use the folder 256x256 )<br>
 You will need ImageMagick installed for this, most distros install it as standard.<br>
