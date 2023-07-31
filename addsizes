@@ -37,7 +37,11 @@ while read
 		x=${REPLY%x?*}
 		if [ "$x" -eq "$x" ] 2>/dev/null;then
 			echo Size=${REPLY%x?*} >>index.theme
-			icontype="Fixed"
+			if [ "$x" -gt 64 ];then
+				icontype="Scalable"
+			else
+				icontype="Fixed"
+			fi
 		else
 			echo Size=16 >>index.theme
 			echo MinSize=8 >>index.theme
