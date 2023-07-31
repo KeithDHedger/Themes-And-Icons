@@ -25,15 +25,13 @@ for arg in $2
 		cd -
 	done
 
-cat >index.theme<<EOF
-[Icon Theme]
-Name=Spring Wood Icons
-Comment=A GNOME/Xfce4 icon theme created by Pedram Pourang (aka Tsu Jan), inspired by nuoveXT-1.6 and tweeked by K.D.Hedger kdhedger68713@gmail.com
-Inherits=gnome
+x="$(head -n4 index.theme)"
 
-Directories=$(find -type d -mindepth 2 |sort -V|tr '\n' ','|sed 's@\./@@g')
+#cat >>index.theme<<EOF
+echo "$x" >>index.theme
+echo "Directories=$(find -type d -mindepth 2 |sort -V|tr '\n' ','|sed 's@\./@@g')" >>index.theme
 
-EOF
+#EOF
 
 while read
 	do
