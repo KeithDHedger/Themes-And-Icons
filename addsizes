@@ -1,0 +1,55 @@
+#!/bin/bash -e
+
+#©keithhedger Sun Jul 30 13:47:57 BST 2023 kdhedger68713@gmail.com
+
+if [ "X$1" = "X" ];then
+	exit 100
+fi
+
+if [ "X$2" = "X" ];then
+	exit 100
+fi
+
+for arg in $2
+	do
+		cp -rv ${1} ${arg}x${arg}
+		cd ${arg}x${arg}
+		find -iname "*.png" | while read file
+			do
+
+				if [ ! -L "$file" ];then
+					echo Converting "$file" ...
+					mogrify -resize ${arg}x${arg} "$file" 2>/dev/null
+				fi
+			done
+		cd -
+	done
+
+cat >index.theme<<EOF
+[Icon Theme]
+Name=Spring Wood Icons
+Comment=A GNOME/Xfce4 icon theme created by Pedram Pourang (aka Tsu Jan), inspired by nuoveXT-1.6 and tweeked by K.D.Hedger kdhedger68713@gmail.com
+Inherits=gnome
+
+Directories=$(find -type d -mindepth 2 |sort -V|tr '\n' ','|sed 's@\./@@g')
+
+EOF
+
+while read
+	do
+		echo [$REPLY] >>index.theme
+		x=${REPLY%x?*}
+		if [ "$x" -eq "$x" ] 2>/dev/null;then
+			echo Size=${REPLY%x?*} >>index.theme
+			icontype="Fixed"
+		else
+			echo Size=16 >>index.theme
+			echo MinSize=8 >>index.theme
+			echo MaxSize=512 >>index.theme
+			icontype="Scalable"
+		fi
+		x=${REPLY#?*/}
+		echo Context=${x^} >>index.theme
+		echo "Type=$icontype" >>index.theme
+		echo >>index.theme
+	done< <(find -type d -mindepth 2 |sort -V|sed 's@\./@@g')
