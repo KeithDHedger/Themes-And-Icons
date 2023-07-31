@@ -10,6 +10,8 @@ if [ "X$2" = "X" ];then
 	exit 100
 fi
 
+themehead="$(head -n4 index.theme)"
+
 for arg in $2
 	do
 		cp -rv ${1} ${arg}x${arg}
@@ -25,13 +27,8 @@ for arg in $2
 		cd -
 	done
 
-x="$(head -n4 index.theme)"
-
-#cat >>index.theme<<EOF
-echo "$x" >>index.theme
+echo "$themehead" >index.theme
 echo "Directories=$(find -type d -mindepth 2 |sort -V|tr '\n' ','|sed 's@\./@@g')" >>index.theme
-
-#EOF
 
 while read
 	do
@@ -51,3 +48,5 @@ while read
 		echo "Type=$icontype" >>index.theme
 		echo >>index.theme
 	done< <(find -type d -mindepth 2 |sort -V|sed 's@\./@@g')
+
+echo "Directories=$(find -type d -mindepth 2 |sort -V|tr '\n' ','|sed 's@\./@@g')" >>index.theme
