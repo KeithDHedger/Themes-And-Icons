@@ -1,0 +1,129 @@
+
+style	"radiobox"
+{
+	fg[NORMAL]="#000000"
+	fg[PRELIGHT]="#f0f0f0"
+	fg[ACTIVE]="#000000"
+
+
+#blank
+	engine	"pixmap"
+		{
+		image
+			{
+				function=OPTION
+				shadow=OUT
+				state=NORMAL
+				overlay_file="radio-norm.png"
+				overlay_stretch=FALSE
+			}
+#blank inactive
+
+		image
+			{
+				function=OPTION
+				shadow=OUT
+				state=INSENSITIVE
+				overlay_file="radio-norm-ia.png"
+				overlay_stretch=FALSE
+			}
+# blanke rollover
+		image
+			{
+				function=OPTION
+				shadow=OUT
+				state=PRELIGHT
+				overlay_file="radio-norm-prelight.png"
+				overlay_stretch=FALSE
+			}
+#blank pressed
+		image
+			{
+				function=OPTION
+				shadow=OUT
+				state=	ACTIVE
+				overlay_file="radio-norm-pressed.png"
+				overlay_stretch=FALSE
+			}
+#selected
+		image
+			{
+				function=OPTION
+				shadow=IN
+				state=NORMAL
+				overlay_file="radio-select.png"
+				overlay_stretch=FALSE
+			}
+
+#selected inactive
+		image
+			{
+				function=OPTION
+				shadow=IN
+				state=INSENSITIVE
+				overlay_file="radio-select-ia.png"
+				overlay_stretch=FALSE
+			}
+#seleceted rollover
+		image
+			{
+				function=OPTION
+				shadow=IN
+				state=PRELIGHT
+				overlay_file="radio-select-prelight.png"
+				overlay_stretch=FALSE
+			}
+#selected pressed
+		image
+			{
+				function=OPTION
+				shadow=IN
+				state=ACTIVE
+				overlay_file="radio-select-pressed.png"
+				overlay_stretch=FALSE
+			}
+#indeterminate
+			image
+				{
+					function=OPTION
+					shadow=ETCHED_IN
+					state=NORMAL
+					overlay_file="radio-ind.png"
+					overlay_stretch=FALSE
+				}
+#indeterminate inactive
+			image
+				{
+					function=OPTION
+					shadow=ETCHED_IN
+					state=INSENSITIVE
+					overlay_file="radio-ind-ia.png"
+					overlay_stretch=FALSE
+				}
+#indeterminate rollover
+			image
+				{
+					function=OPTION
+					shadow=ETCHED_IN
+					state=PRELIGHT
+					overlay_file="radio-ind-prelight.png"
+					overlay_stretch=FALSE
+				}
+#indeterminate pressed
+			image
+				{
+					function=OPTION
+					shadow=ETCHED_IN
+					state=ACTIVE
+					overlay_file="radio-ind-pressed.png"
+					overlay_stretch=FALSE
+				}
+
+		image
+			{
+				function=FLAT_BOX
+			}
+
+		}
+}
+

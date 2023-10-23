@@ -1,0 +1,268 @@
+
+style	"scrollbar"
+{
+	GtkScrollbar::min_slider_length=50
+
+	engine	"pixmap"	
+		{
+##########TROUGHS###########
+		image	
+			{
+			function=BOX
+			recolorable=TRUE
+			detail="trough"
+			file="trough-scrollbar-horiz.png"
+			border={16,16,2,2}
+			stretch=TRUE
+			orientation=HORIZONTAL
+			}
+ 
+		image	
+			{
+			function=BOX
+			recolorable=TRUE
+			detail="trough"
+			file="trough-scrollbar-vert.png"
+			border={2,2,16,16}
+			stretch=TRUE
+			orientation=VERTICAL
+			}
+########STEPPERS#############
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=NORMAL
+			file="stepper-up.png"
+			stretch=TRUE
+			arrow_direction=UP
+			}
+
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=ACTIVE
+			file="stepper-up-prelight.png"
+			stretch=TRUE
+			arrow_direction=UP
+			}
+
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=PRELIGHT
+			file="stepper-up-prelight.png"
+			stretch=TRUE
+			arrow_direction=UP
+			}
+
+		image	
+			{
+			function	=STEPPER
+			recolorable	=TRUE
+			state=INSENSITIVE
+			file="stepper-up-insens.png"
+			stretch=TRUE
+			arrow_direction=UP
+			}
+
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=NORMAL
+			file="stepper-down.png"
+			stretch=TRUE
+			arrow_direction=DOWN
+			}
+
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=ACTIVE
+			file="stepper-down-prelight.png"
+			stretch=TRUE
+			arrow_direction=DOWN
+			}
+
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=PRELIGHT
+			file="stepper-down-prelight.png"
+			stretch=TRUE
+			arrow_direction=DOWN
+			}
+
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=INSENSITIVE
+			file="stepper-down-insens.png"
+			stretch=TRUE
+			arrow_direction=DOWN
+			}
+
+#BEGIN	LEFT/RIGHT
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=NORMAL
+			file="stepper-left.png"
+			stretch=TRUE
+			arrow_direction=LEFT
+			}
+
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=ACTIVE
+			file="stepper-left-prelight.png"
+			stretch=TRUE
+			arrow_direction=LEFT
+			}
+
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=PRELIGHT
+			file="stepper-left-prelight.png"
+			stretch=TRUE
+			arrow_direction=LEFT
+			}
+
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=INSENSITIVE
+			file="stepper-left-insens.png"
+			stretch=TRUE
+			arrow_direction=LEFT
+			}
+
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=NORMAL
+			file="stepper-right.png"
+			stretch=TRUE
+			arrow_direction=RIGHT
+			}
+
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=ACTIVE
+			file="stepper-right-prelight.png"
+			stretch=TRUE
+			arrow_direction=RIGHT
+			}
+
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=PRELIGHT
+			file="stepper-right-prelight.png"
+			stretch=TRUE
+			arrow_direction=RIGHT
+			}
+
+		image	
+			{
+			function=STEPPER
+			recolorable=TRUE
+			state=INSENSITIVE
+			file="stepper-right-insens.png"
+			stretch=TRUE
+			arrow_direction=RIGHT
+			}
+
+#END	LEFT/RIGHT
+
+#vertical slider
+		image	
+			{
+				function=SLIDER
+				state=NORMAL
+				file="slider-vert.png"
+				stretch=FALSE
+				orientation=VERTICAL
+              		overlay_border={1,1,1,1}
+				overlay_file="slider-vert-over.png"
+              		overlay_stretch=TRUE
+			}
+
+		image	
+			{
+				function=SLIDER
+				state=PRELIGHT
+				file="slider-vert-prelight.png"
+				stretch=FALSE
+				orientation=VERTICAL
+              		overlay_border={1,1,1,1}
+				overlay_file="slider-vert-over.png"
+              		overlay_stretch=TRUE
+			}
+
+		image	
+			{
+				function=SLIDER
+				state=INSENSITIVE
+				file="slider-vert-ia.png"
+				stretch=FALSE
+				orientation=VERTICAL
+              		overlay_border={1,1,1,1}
+				overlay_file="slider-vert-over.png"
+              		overlay_stretch=TRUE
+			}
+
+#hizontal slider
+		image	
+			{
+				function=SLIDER
+				state=PRELIGHT
+				file="slider-horiz-prelight.png"
+				stretch=FALSE
+				orientation=HORIZONTAL
+              		overlay_border={1,1,1,1}
+				overlay_file="slider-horiz-over.png"
+              		overlay_stretch=TRUE
+			}
+
+		image	
+			{
+				function=SLIDER
+				state=NORMAL
+				file="slider-horiz.png"
+				stretch=FALSE
+				orientation=HORIZONTAL
+              		overlay_border={1,1,1,1}
+				overlay_file="slider-horiz-over.png"
+              		overlay_stretch=TRUE
+			}
+
+		image	
+			{
+				function=SLIDER
+				state=INSENSITIVE
+				file="slider-horiz-ia.png"
+				stretch=FALSE
+				orientation=HORIZONTAL
+              		overlay_border={1,1,1,1}
+				overlay_file="slider-horiz-over.png"
+              		overlay_stretch=TRUE
+			}
+		}
+}

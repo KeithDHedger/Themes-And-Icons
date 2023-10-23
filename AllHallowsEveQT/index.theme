@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=All Hallows QT
+Type=X-GNOME-Metatheme
+Comment=All Hallows Theme For QT5 Using Gtk2 Pluging ©K.D.Hedger 2012
+
+[X-GNOME-Metatheme]
+GtkTheme=AllHallowsEveQT
+IconTheme=HalloweenIcons
+CursorTheme=Golden-XCursors-3D-0.8
+

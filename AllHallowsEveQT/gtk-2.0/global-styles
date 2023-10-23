@@ -1,0 +1,49 @@
+
+#Theme color scheme
+gtk_color_scheme = "fg_color:#000000\nbg_color:#C17200\nbase_color:#ff0000\ntext_color:#000000\nselected_bg_color:#ffff00\nselected_fg_color:#00ffff"
+
+style "default"
+{
+	GtkWidget::focus-line-width=1
+#	GtkScrollbar::slider_width=15
+#
+#	GtkRange::trough-border=0
+#	GtkRange::slider-width=24
+#	GtkRange::stepper-size=20
+#
+#	GtkButton::default_border={0,0,0,0}
+
+	fg[NORMAL]="#000000"
+	fg[PRELIGHT]="#c0c0c0"
+	fg[ACTIVE]="#404040"
+	fg[INSENSITIVE]="#404040"
+
+#	bg_pixmap[INSENSITIVE]="pat.png"
+#	bg_pixmap[SELECTED]="pat.png"
+	bg_pixmap[NORMAL]="pat.png"
+	bg_pixmap[ACTIVE]="pat-ia.png"
+#	bg_pixmap[SELECTED]="pat.png"
+#	bg_pixmap[INSENSITIVE]="pat-ia.png"
+
+	bg[NORMAL]=@bg_color
+#	bg[PRELIGHT]="#ff00ff"
+#	bg[SELECTED]="#ff00ff"
+	bg[ACTIVE]="#AD997A"
+#	bg[INSENSITIVE]="#ff00ff"
+}
+
+style "dialog"
+{
+	GtkWidget::focus-line-width=1
+	GtkScrollbar::slider_width=14
+	GtkRange::trough_border=0
+
+	GtkButton::default_border={0,0,0,0}
+
+	fg[NORMAL]="#ffffff"
+	fg[PRELIGHT]="#000000"
+	bg_pixmap[NORMAL]="bc.png"
+	bg_pixmap[INSENSITIVE]="bc.png"
+}
+
+class "GtkDialog" style "dialog"
