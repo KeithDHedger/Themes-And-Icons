@@ -2,6 +2,7 @@
 
 #©keithhedger Fri 18 Mar 13:02:28 GMT 2022 kdhedger68713@gmail.com
 
+ln -sv ../stock/stock_apply.png actions/dialog-ok.png
 ln -sv ../stock/stock_about.png actions/help-about.png
 ln -sv ../stock/stock_new.png actions/document-new.png
 ln -sv ../stock/stock_print.png actions/document-print.png
