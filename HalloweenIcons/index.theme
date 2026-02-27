@@ -54,4 +54,8 @@ Size=128
 Context=Categories
 Type=scalable
 
+[scalable/stock]
+Size=256
+Context=stock
+Type=scalable
 

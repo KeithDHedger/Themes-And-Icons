@@ -1,0 +1,12 @@
+#!/bin/bash -e
+
+#©keithhedger Fri 18 Mar 13:02:28 GMT 2022 kdhedger68713@gmail.com
+
+find -iname "*.png" | while read file
+	do
+
+	if [ ! -L "$file" ];then
+		echo Converting "$file" ...
+		convert "$file" -resize 256x256 "$file"
+	fi
+done
